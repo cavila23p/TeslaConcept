@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <title>Tesla</title>
+</head>
+<body>
+
+  <!-- Container -->
+  <div class="container">   
+
+    <!-- Navbar -->
+    <section class="navbar mx-1 mb-1">
+      <nav class="flex">
+        <a href="./index.html" class="logo"><img src="./images/logo.png" alt=""></a>
+        <a class="hamburger" id="hamburger"><i class="fas fa-bars"></i></a>
+        <ul class="flex nav-ul" id="nav-ul">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="https://www.tesla.com/roadster">What's New</a></li>
+          <li><a href="https://www.tesla.com/contact">Contact</a></li>
+          <li><a href="https://cavila23p.github.io/Portfolio/#portfolio/index.html">Portfolio</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- Showcase -->
+    <section class="showcase mx-1 mb-3">
+      <div class="grid sc-grid">
+        <div class="sc-col-1">
+          <h1>It's not just a car <br>
+            It's <span>a Tesla</span>
+          </h1><br>
+          <p>We don't just make electric cars, we sell a slice of the future. The cars are so good that they're winning all the awards that gasoline cars used to win.</p>
+          <br><a class="btn" href="https://www.tesla.com/">Learn More</a>
+        </div>
+
+        <div class="sc-col-2">
+          <img class="tesla" src="./images/img1.png" alt="">
+        </div>
+
+        <div class="sc-col-3 flex">
+          <ul class="flex">            
+            <li><a href="#"><i class="fab fa-facebook-f fa-2x"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter fa-2x"></i></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram fa-2x"></i></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cars -->
+    <section class="cars">
+      <h2>Select your style</h2>
+      <nav class="flex">        
+        <ul class="flex">
+          <li><a href="#"><img src="./images/img1.png" onclick="imgSlider('./images/img1.png'); changeCircleColor('#017143')" alt=""></a></li>
+          <li><a href="#"><img src="./images/img2.png" onclick="imgSlider('./images/img2.png'); changeCircleColor('#eb7495')" alt=""></a></li>
+          <li><a href="#"><img src="./images/img3.png" onclick="imgSlider('./images/img3.png'); changeCircleColor('#d752b1')" alt=""></a></li>
+        </ul>
+      </nav>
+    </section> 
+    
+    <!-- Footer -->
+    <footer>
+      <p>&copy; Carlos Avila 2021</p>
+    </footer>
+
+  </div>
+  <!-- End of Container -->
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
